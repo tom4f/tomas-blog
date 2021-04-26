@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /*  */
+  min-height: calc( 100vh - 65px - 31px );
+  margin: 0 auto;
+
+  padding: 1rem;
+  font-size: 1.25rem;
+  max-width: 1000px;
+  
+  /*border-style: dotted;*/
+
+  /* flex: 1; */
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+}
+
+@media (max-width: 500px) {
+  .container {
+    min-height: calc( 100vh - 65px - 65px - 31px );
+  }
+}

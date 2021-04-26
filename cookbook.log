@@ -1,2 +1,27 @@
 PS C:\privat\xampp\htdocs> npx create-next-app 86_tomas-blog --use-npm
 & "C:\Program Files\Git\bin\sh.exe" --login
+
+echo "# girl_blog" >> README.md
+  503  git init
+  504  git add README.md
+  505  git status
+  506  git commit -m "first commit"
+  507  git remote add origin https://github.com/tom4f/tomas-blog.git
+  508  git status
+  511  git add .
+  512  git status
+  513  git commit -m "second commit"
+  515  git status
+// on github create new repository with name tomas-blog
+  516  git push -u origin master
+
+  npm install axios
+  npm install react-markdown
+
+
+// next.config.js in place as packet.json
+  module.exports = {
+    images: {
+      domains: ['frymburk.com', 'www.frymburk.com', 'localhost'],
+    },
+  };

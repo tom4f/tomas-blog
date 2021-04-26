@@ -1,0 +1,51 @@
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;  
+}
+
+.nav_container > * {
+  margin: 0;
+  height: 65px;
+  padding: 5px;
+}
+
+
+
+.logo {
+  line-height: 1.15;
+  font-size: 3rem;
+  color: red;
+
+}
+
+.logo span {
+  color: #0070f3;
+}
+
+.nav {
+  background: #000;
+  color: #fff;
+}
+
+
+.nav ul {
+padding: 0;
+  display: flex;
+  list-style: none;
+  align-self: center;
+}
+
+
+.nav ul li a {
+  margin: 5px 15px;
+}
+
+@media (max-width: 500px) {
+  .nav_container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
