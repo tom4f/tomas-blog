@@ -1,0 +1,2 @@
+PS C:\privat\xampp\htdocs> npx create-next-app 86_tomas-blog --use-npm
+& "C:\Program Files\Git\bin\sh.exe" --login
