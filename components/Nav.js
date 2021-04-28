@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import navStyles from '../styles/Nav.module.css'
-import { serverPath } from '../config'
+import { photoGalleryLink } from '../config'
 
 export default function Nav( { loginStatus, user, setLoginStatus } ) {
   return (
@@ -22,7 +22,7 @@ export default function Nav( { loginStatus, user, setLoginStatus } ) {
               <Link href='/about'>O&nbsp;mě</Link>
             </li>
             <li>
-              <Link href={ `${serverPath}/fotogalerie_lucka.html` }>Fotogalerie</Link>
+              <Link href={ photoGalleryLink }>Fotogalerie</Link>
             </li>
           </ul>
         </nav>

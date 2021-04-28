@@ -4,7 +4,6 @@ import articleStyles from '../styles/Article.module.css'
 import { useState } from 'react'
 
 export default function ArticleList({ articles, images, loginStatus, webToken }) {
-  console.log( images )
   const [ isCreateBlog, setIsCreateBlog ] = useState( false )
   const now = new Date()
   const [ year, month, day ] = [ now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() ]

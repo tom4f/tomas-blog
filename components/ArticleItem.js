@@ -1,11 +1,12 @@
 import { serverPath } from '../config'
+import { photoFolder } from '../config'
 import Link from 'next/link'
 import articleStyles from '../styles/Article.module.css'
 import NextImage from './NextImage'
 
 export default function ArticleItem( { article, images, loginStatus } ) {
 
-    const imagePath = `${serverPath}/fotogalerie_lucka/${article.image}.jpg`
+    const imagePath = `${serverPath}/${photoFolder}/${article.image}.jpg`
 
     const getImageParamsFromDB = images.find( img => img.id === article.image )
 

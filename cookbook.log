@@ -25,3 +25,5 @@ echo "# girl_blog" >> README.md
       domains: ['frymburk.com', 'www.frymburk.com', 'localhost'],
     },
   };
+
+  npm i -g vercel
