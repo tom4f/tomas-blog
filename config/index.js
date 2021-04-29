@@ -8,5 +8,5 @@ export const photoGalleryLink = `${serverPath}/fotogalerie_tomas.html`
 
 export const blogApiScript = 'pdo_read_blog_tomas.php'
 export const blogApiScriptExt = '_tomas'
-
+//
 export const apiPath = dev ? 'http://localhost:3000' : 'https://tomas-blog.vercel.app/'
