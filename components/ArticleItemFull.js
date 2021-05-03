@@ -15,17 +15,20 @@ export default function ArticleItemFull( { article = {}, images = [], loginStatu
   const imagePath = imageNumber => `${serverPath}/${photoFolder}/${imageNumber}b.jpg`
   const imageFromDB       =          images.find( img => img.id === editArticle.image )
   const imageParamsFromDB = image => images.find( img => img.id === image.src.slice(1) )
-  const flexBoxForEdit = loginStatus ? ({ flexBasis: '100%' }) : ({})
 
   const components = {
     p: props     => props.children[0]?.type?.name === "img"
                               ? <div style={{ width: '100%' }} {...props} />
-                              : <a {...props} />,
+                              : <p {...props} />,
     img: markDownImage => <NextImage
                               src={ imagePath( markDownImage.src.slice( 1 ) ) }
                               imageParams={ imageParamsFromDB( markDownImage ) }
                               width={ '80%' }
-                              maxWidth={ '800px' } />
+                              maxWidth={ '800px' }
+                              
+    
+                              
+                              />
   }
 
   const router = useRouter();
@@ -33,7 +36,7 @@ export default function ArticleItemFull( { article = {}, images = [], loginStatu
         ? <div>Loading Blog...</div>
         : <section className={ articleFullStyles.blogContainer}>
               <Meta title={editArticle.title} description={editArticle.title} />
-              <article style={ flexBoxForEdit }>
+              <article style={ loginStatus ? { width: '50%' } : { width: '0%' } }>
                   {  loginStatus
                         ? <EditOrCreateApi
                               mode = { mode }
@@ -43,7 +46,7 @@ export default function ArticleItemFull( { article = {}, images = [], loginStatu
                               submitButtonText = { `Uložit změny - ${ mode }` } />
                         : null }
               </article>
-              <article style={ flexBoxForEdit }>
+              <article style={ loginStatus ? { width: '50%' } : { width: '100%' } }>
                   <small>{ editArticle.date } <b>&rarr;{ editArticle.category }</b></small>
                   <h1>{editArticle.title}</h1>
                   <div className={ articleFullStyles.intro}>{editArticle.intro}</div>
