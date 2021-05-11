@@ -23,12 +23,8 @@ export default function ArticleItemFull( { article = {}, images = [], loginStatu
     img: markDownImage => <NextImage
                               src={ imagePath( markDownImage.src.slice( 1 ) ) }
                               imageParams={ imageParamsFromDB( markDownImage ) }
-                              width={ '80%' }
-                              maxWidth={ '800px' }
-                              
-    
-                              
-                              />
+                              width={ '100%' }
+                              maxWidth={ '1000px' } />
   }
 
   const router = useRouter();
@@ -53,8 +49,8 @@ export default function ArticleItemFull( { article = {}, images = [], loginStatu
                   <NextImage
                       src={ imagePath( editArticle.image ) }
                       imageParams={ imageFromDB }
-                      width={ '80%' }
-                      maxWidth={ '800px' } />
+                      width={ '100%' }
+                      maxWidth={ '1000px' } />
                   <ReactMarkDown
                       children={editArticle.body}
                       components={components} />
