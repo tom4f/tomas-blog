@@ -54,7 +54,7 @@ export default function ArticleItemFull( { article = {}, images = [], loginStatu
                   <ReactMarkDown
                       children={editArticle.body}
                       components={components} />
-                  <div className={ articleFullStyles.link}><Link href='/'>Zpět</Link></div>
+                  <div className={ articleFullStyles.link}><Link href='/'>Home</Link></div>
               </article>
           </section>
 }

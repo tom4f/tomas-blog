@@ -6,7 +6,7 @@ export default function Nav( { loginStatus, user, setLoginStatus } ) {
   return (
     <header  className={navStyles.nav_container}>
         <h1 className={navStyles.logo}>
-          <span>Olča</span>.cz
+          <span>Tom</span>Projects
         </h1>
         <nav className={navStyles.nav}>
           <ul>

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer  className={footerStyles.footer_container}>
         <h1 className={footerStyles.logo}>
-          <span>Olča</span>.cz
+          <span>Tomáš</span> Kučera
         </h1>
     </footer>
   )
