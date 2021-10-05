@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div>
       <p className={headerStyles.description}>
-        My projects
+      Self-Taught Web Developer
       </p>
     </div>
   )
