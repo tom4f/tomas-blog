@@ -7,7 +7,7 @@ export const fetchAllArticles = async () => {
         `/api/${blogApiScript}`,
         `/api/${photoApiScript}`
       ]
-  
+  //
       const fetchList = urlList.map( url => 
           fetch( `${serverPath}${url}` )
             .then( response => response.json() )
