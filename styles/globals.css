@@ -36,10 +36,10 @@ a {
   max-height: unset !important;
 }
 
-.next-img-wrapper > div {
+.next-img-wrapper > span {
 position: relative !important;
 }
 
-.next-img-wrapper > div > img {
+.next-img-wrapper > span > img {
 position: relative !important;
 }
